@@ -3,7 +3,7 @@
 
 **toString()**
 
-int, double, bool 값을 문자열(String)로 변환주는 함수.
+int, double, bool 값을 문자열(String)로 변환주는 함수, 반환 값은 String
 
 ```
 int age = 20;
@@ -27,6 +27,14 @@ List<String> fruits = text.split(' ');
 // 결과: ['사과', '바나나'. '포도']
 ```
 
+**toInt()**
+
+double을 소수점 이하로 버림하여 int로 변환해주는 함수.
+
+```
+double pi = 3.14;
+int intPi = pi.toint(); // 3
+```
 
 
 
