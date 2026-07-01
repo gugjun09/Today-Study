@@ -1,0 +1,40 @@
+# 2026-07-01-Study
+공부한 내용 정리
+
+**toString()**
+
+int, double, bool 값을 문자열(String)로 변환주는 함수, 반환 값은 String
+
+```
+int age = 20;
+String ageString = age.toString(); // "20"
+
+double pi = 3.14;
+String piStirng - pi.toString(); // "3.14"
+
+bool isTrue = ture;
+String boolString = isTrue.toString(); // "ture"
+```
+
+**split()**
+
+특정 구분자(예: 표 공백)를 기준으로 문자열을 자를 때 사용하는 함수.
+
+```
+String text = "사과, 바나나 포도";
+List<String> fruits = text.split(' ');
+
+// 결과: ['사과', '바나나'. '포도']
+```
+
+**toInt()**
+
+double을 소수점 이하로 버림하여 int로 변환해주는 함수.
+
+```
+double pi = 3.14;
+int intPi = pi.toint(); // 3
+```
+
+
+
