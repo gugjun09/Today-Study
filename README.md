@@ -1,4 +1,4 @@
-# Today-Study
+# 2026-07-01-Study
 공부한 내용 정리
 
 **toString()**
