@@ -1,13 +1,12 @@
-# TextButton : 글자만 표시되는 버튼 
+# TextButton
+
+글자만 표시되는 버튼 
 
 ```
 TextButton(
-  child: Text('Text Button'),
-  style: TextButton.styleFrom(
-    primary: Colors.green, // 글자색
-  ),
-  onPressed: () {
-    print('Text 버튼 클릭!');
-  },
-)
+          child: Text('Text Button', style: TextStyle(color: Colors.red)),
+          onPressed: () {
+            print('Text 버튼 클릭!');
+          },
+        )
 ```
