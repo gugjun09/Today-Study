@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 
 위젯이 동작하는 동안 Data 변경이 필요한 경우 화면을 다시 그려서 변경된 부분을 위젯에 반영하는 동적인 위젯으로 이벤트 또는 사용자 상호 작용에 의해 동작한다.  
 
-예를 들어 축구 게임의 경우 점수를 나타내는 위젯은 골이 들어갈 때마다 변경해야 돼서 Stateful Widget 사용이 필요하다.
+예를 들어 화면을 꾹 눌러서 페이지를 넘기고 싶으면 Stateful Widget을 사용해야한다.
 
 ```
 
@@ -41,14 +41,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: CupertinoDatePicker(mode: CupertinoDatePickerMode.date,
-          onDateTimeChanged: (DateTime date) {
-
-          },
-          dateOrder: DatePickerDateOrder.ydm,
-
-        ),
+      body: PageView(
+        children: [1, 2, 3, 4, 5]
+            .map((e) => Image.asset('asset/img/img_$e.png', fit: BoxFit.cover))
+            .toList(),
       ),
     );
   }
