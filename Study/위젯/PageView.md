@@ -24,6 +24,12 @@ PageView(
       ),
 ```
  
-PageController를 사용하면 뷰에 표시되는 페이지를 제어할 수 있다.
+**PageController를 사용하면 뷰에 표시되는 페이지를 제어할 수 있다.**
+
+
+
+
+
+
 
 
