@@ -1,0 +1,16 @@
+**Spacer**
+
+Spacer는 Row 또는 Column과 같은 Flex 컨테이너 내 위젯 사이의 간격을 조정하는 데 사용할 수 있는 조정 가능한 빈 공간를 생성한다 .
+
+```
+ Row(
+  children: [
+    Text('Begin'),
+    Spacer(flex: 4), // Flex의 기본값은 1이다.
+    Text('Middle'),
+    Spacer(flex: 2),
+    Text('End'),
+  ],
+)
+
+```
